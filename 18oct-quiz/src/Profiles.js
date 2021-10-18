@@ -1,24 +1,28 @@
 import React from 'react'
+import { Route, Link, Switch, BrowserRouter as Router } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import Home from './Home';
 import About from './About.js';
 
 
 export default function Profiles() {
-    const {contactProfiles} = useParams();
-    /*
-    return (
+    //const {profiles.contactProfiles} = useParams();
+    //const {profiles.newsArticles}    = useParams();
     
+    
+    return (
+      <>
       <div>
-         <h1>Profiles</h1>
-         <p>{id}</p>
-         
+        <ul>
+            <li>{profiles.newsArticles}</li>
+        </ul>
+        <Link to="/profiles">{profiles.contactProfiles}</Link>
       </div>
+      </>
       
     );
-    */   
-  
-    }
+      
+  }
 
 
 

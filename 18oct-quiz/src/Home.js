@@ -8,7 +8,7 @@ import Profiles from './Profiles.js';
 export default function Home() {
     return (
         <div>
-          <h2>Home</h2>
+          <Link to="/">Home</Link>
         </div>
     );
 };
